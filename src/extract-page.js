@@ -1,8 +1,8 @@
 (() => {
   "use strict";
 
-  const MAX_RENDERED_CHARS = 750000;
-  const TAIL_CHARS = 50000;
+  const MAX_RENDERED_CHARS = 200000;
+  const TAIL_CHARS = 20000;
   const body = document.body || document.documentElement;
   const rawText = body ? (body.innerText || "") : "";
   const normalizedText = rawText
@@ -16,11 +16,11 @@
   let truncated = false;
 
   if (renderedText.length > MAX_RENDERED_CHARS) {
-    const headChars = MAX_RENDERED_CHARS - TAIL_CHARS;
-    const omitted = renderedText.length - MAX_RENDERED_CHARS;
+    const truncationNotice = `\n\n[Rendered page shortened from ${renderedText.length.toLocaleString("en-US")} characters to fit the capture limit]\n\n`;
+    const headChars = MAX_RENDERED_CHARS - TAIL_CHARS - truncationNotice.length;
     renderedText = [
       renderedText.slice(0, headChars),
-      `\n\n[${omitted.toLocaleString("en-US")} characters omitted because the rendered page was exceptionally long]\n\n`,
+      truncationNotice,
       renderedText.slice(-TAIL_CHARS)
     ].join("");
     truncated = true;

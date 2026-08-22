@@ -1,7 +1,7 @@
 "use strict";
 
 const CHATGPT_URL = "https://chatgpt.com/";
-const HANDOFF_PREFIX = "chatgpt-handoff:";
+const HANDOFF_PREFIX = "share-with-chatgpt-handoff:";
 const HANDOFF_MAX_AGE_MS = 2 * 60 * 60 * 1000;
 
 function handoffKey(tabId) {
@@ -79,12 +79,12 @@ browser.runtime.onMessage.addListener(async (message, sender) => {
 
   const key = handoffKey(sender.tab.id);
 
-  if (message.type === "get-chatgpt-handoff") {
+  if (message.type === "get-share-with-chatgpt-handoff") {
     const result = await browser.storage.local.get(key);
     return result[key] || null;
   }
 
-  if (message.type === "complete-chatgpt-handoff") {
+  if (message.type === "complete-share-with-chatgpt-handoff") {
     await browser.storage.local.remove(key);
     return { ok: true };
   }
