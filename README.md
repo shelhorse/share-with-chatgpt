@@ -1,8 +1,14 @@
 # Share with ChatGPT
 
-Share with ChatGPT is a Firefox extension that sends the rendered content of the current webpage to a new ChatGPT conversation.
+Share with ChatGPT is a Firefox extension that places the rendered content of the current webpage into a new ChatGPT conversation.
 
 When activated, the extension opens ChatGPT and places the page content into the message composer. The content is not submitted automatically. The user can add a question or instructions before sending the message.
+
+## Why this extension?
+
+Providing ChatGPT with a URL does not guarantee that it receives the same complete rendered page content that is visible in the browser. This extension supplies that content directly to the conversation so that questions, fact-checking, research, summarization, and analysis can be grounded in the page being viewed.
+
+The extension addresses a current integration gap between Firefox and ChatGPT. Future browser or ChatGPT capabilities may make this workflow unnecessary.
 
 ## Usage
 
