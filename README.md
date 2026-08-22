@@ -1,31 +1,20 @@
 # Share with ChatGPT
 
-A Firefox extension that prepares content from the current tab and opens ChatGPT with that content placed directly in a prompt. The prompt remains ready for the user to add a question and submit.
+Share with ChatGPT is a Firefox extension that sends the rendered content of the current webpage to a new ChatGPT conversation.
 
-## Initial requirements
+When activated, the extension opens ChatGPT and places the page content into the message composer. The content is not submitted automatically. The user can add a question or instructions before sending the message.
 
-- Provide a simple browser action for sharing the current tab with ChatGPT.
-- Extract and prepare the useful content from the active page.
-- Place the prepared content directly into a new ChatGPT prompt.
-- Leave the prompt unsubmitted so the user can add a question.
-- Do not implement a fallback workflow.
-- Minimize required user interaction.
-- Support Firefox on desktop and Android where Firefox extension APIs permit it.
-- Request only the permissions required for the extension to work.
+## Usage
 
-## Project checklist
+1. Open the webpage you want to discuss.
+2. Activate Share with ChatGPT.
+3. A new ChatGPT conversation opens with the page content already placed in the message composer.
+4. Add your question or instructions and submit the message.
 
-- [x] Confirm the initial behavior and remove the obsolete fallback requirement.
-- [x] Create the private GitHub repository.
-- [ ] Recover or recreate the previously working extension source.
-- [ ] Review the implementation against these requirements.
-- [ ] Review security, privacy, and requested permissions.
-- [ ] Test on Firefox desktop.
-- [ ] Test on Firefox for Android.
-- [ ] Package an unsigned XPI for testing.
-- [ ] Prepare the first release.
-- [ ] Decide whether and when to make the repository public.
+## Installation
 
-## Change-management approach
+Installation instructions will be added when packaged builds are available.
 
-Use GitHub issues for discrete bugs or enhancements. Make implementation changes on short-lived branches and merge them through pull requests so each change has a clear record.
+## Development
+
+The extension is under active development. Source code and release history are maintained in this repository.
