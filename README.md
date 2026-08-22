@@ -6,6 +6,8 @@ When activated, the extension opens ChatGPT and places the page content into the
 
 ## Usage
 
+If you intend to use an authenticated ChatGPT account, sign in to ChatGPT in the same Firefox browser session before using the extension.
+
 1. Open the webpage you want to discuss in Firefox.
 2. Open the Firefox menu and select **Share with ChatGPT** to initiate the extension.
 3. The extension opens a new ChatGPT conversation and places the webpage content into the message composer.
