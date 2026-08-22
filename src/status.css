@@ -1,0 +1,52 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, sans-serif;
+  background: #111;
+  color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: min(32rem, calc(100% - 2rem));
+  text-align: center;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  display: grid;
+  place-items: center;
+  border: 2px solid #ef4444;
+  border-radius: 50%;
+  color: #ef4444;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 .75rem;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #c8c8c8;
+  line-height: 1.5;
+}
+
+button {
+  margin-top: 1rem;
+  padding: .75rem 1rem;
+  border: 0;
+  border-radius: .6rem;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  font-weight: 650;
+}
