@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Ask ChatGPT",
-  "version": "1.0.1",
+  "name": "Share with ChatGPT",
+  "version": "0.1.0",
   "description": "Open a new ChatGPT tab with the current page's rendered text supplied as context.",
   "icons": {
     "48": "icons/chatgpt.svg",
@@ -9,7 +9,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "ask-chatgpt@local",
+      "id": "share-with-chatgpt@local",
       "strict_min_version": "142.0",
       "data_collection_permissions": {
         "required": [
@@ -35,7 +35,7 @@
     "persistent": false
   },
   "browser_action": {
-    "default_title": "Ask ChatGPT",
+    "default_title": "Share with ChatGPT",
     "default_icon": {
       "48": "icons/chatgpt.svg",
       "96": "icons/chatgpt.svg"
