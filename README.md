@@ -6,10 +6,11 @@ When activated, the extension opens ChatGPT and places the page content into the
 
 ## Usage
 
-1. Open the webpage you want to discuss.
-2. Activate Share with ChatGPT.
-3. A new ChatGPT conversation opens with the page content already placed in the message composer.
-4. Add your question or instructions and submit the message.
+1. Open the webpage you want to discuss in Firefox.
+2. Open the Firefox menu and select **Share with ChatGPT** to initiate the extension.
+3. The extension opens a new ChatGPT conversation and places the webpage content into the message composer.
+4. Add your question or instructions to the prepared message.
+5. Submit the message when ready.
 
 ### Android
 
